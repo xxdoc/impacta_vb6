@@ -36,12 +36,12 @@ Begin VB.MDIForm MDIPrincipal
          Caption         =   "AC2 - Atendimento ao Cliente"
          Shortcut        =   {F4}
       End
-      Begin VB.Menu MnuControleFinanceiro 
-         Caption         =   "AC3 - Controle Financeiro"
-         Shortcut        =   {F5}
-      End
       Begin VB.Menu MnuCustodoProduto 
          Caption         =   "AC3 - Custo do Produto"
+         Shortcut        =   {F5}
+      End
+      Begin VB.Menu MnuControleFinanceiro 
+         Caption         =   "PROVA - Controle Financeiro"
          Shortcut        =   {F6}
       End
    End
