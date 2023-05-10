@@ -16,5 +16,5 @@ frmCadastrodeOpcoes = 130, 130, 1302, 754, C, 156, 156, 976, 780, C
 frmControleFinanceiro = 208, 208, 1028, 832, C, 208, 208, 1028, 832, C
 frmCadastroCliente = 182, 182, 1002, 806, C, 130, 131, 950, 754, C
 frmAtendimentoCliente = 52, 52, 1291, 676, C, 78, 78, 1317, 702, C
-frmCustoProduto = 104, 104, 944, 728, Z, 104, 104, 1276, 728, C
+frmCustoProduto = 104, 104, 944, 728, C, 104, 104, 1276, 728, C
 frmAjuda = 0, 0, 0, 0, C, 78, 78, 898, 702, C

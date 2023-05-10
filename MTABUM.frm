@@ -7,7 +7,6 @@ Begin VB.MDIForm MDIPrincipal
    ClientTop       =   765
    ClientWidth     =   16590
    Icon            =   "MTABUM.frx":0000
-   Picture         =   "MTABUM.frx":1486
    WindowState     =   2  'Maximized
    Begin VB.Menu MnuCadastro 
       Caption         =   "Cadastros"

@@ -378,11 +378,20 @@ Private Sub Form_Load()
    cmbFormulario.AddItem ""
    cmbFormulario.AddItem "CADASTRO DE USUÁRIO"
    cmbFormulario.AddItem "ATENDIMENTO"
+   cmbFormulario.AddItem "CUSTO DO PRODUTO"
    
    cmbTipo.Clear
    cmbTipo.AddItem ""
    cmbTipo.AddItem "PERFIL"
    cmbTipo.AddItem "STATUS"
+   
+'  CUSTO DO PRODUTO
+   cmbTipo.AddItem "GATEWAY"
+   cmbTipo.AddItem "IOF"
+   cmbTipo.AddItem "PARCELAMENTO"
+   cmbTipo.AddItem "OUTROS CUSTOS"
+   cmbTipo.AddItem "IMPOSTO"
+   cmbTipo.AddItem "MARKETING"
    
    CONSULTAR_REGISTROS
 End Sub
@@ -445,11 +454,12 @@ End Sub
 Private Function VERIFICAR_DADOS_BASE() As Boolean
    VERIFICAR_DADOS_BASE = True
    
+   CmdSql = ""
+   
    With lvwConsulta
       For IL = 1 To .ListItems.Count
          Select Case .ListItems(IL).SubItems(colStatus)
          Case "D"
-   
             Select Case .ListItems(IL).SubItems(colTipo)
             Case "PERFIL"
                CmdSql = "SELECT * FROM ACESSO" & vbCr
@@ -458,17 +468,19 @@ Private Function VERIFICAR_DADOS_BASE() As Boolean
                CmdSql = "SELECT * FROM ACESSO" & vbCr
                CmdSql = CmdSql & "WHERE STATUS = " & PoeAspas(.ListItems(IL).SubItems(colDescricao))
             End Select
-            CMySql.Consulta CmdSql, RsConsulta
             
-            If Not RsConsulta.EOF Then
-               MsgBoxTabum Me, "HÁ REGISTRO COM ESTE DADO, NÃO PODE SER EXCLUÍDO" & vbCr & _
-                               "TIPO: " & .ListItems(IL).SubItems(colTipo) & vbCr & _
-                               "DESCRIÇÃO: " & .ListItems(IL).SubItems(colDescricao)
+            If CmdSql <> "" Then
+               CMySql.Consulta CmdSql, RsConsulta
                
-               .ListItems(IL).SubItems(colStatus) = ""
-               VERIFICAR_DADOS_BASE = False
+               If Not RsConsulta.EOF Then
+                  MsgBoxTabum Me, "HÁ REGISTRO COM ESTE DADO, NÃO PODE SER EXCLUÍDO" & vbCr & _
+                                  "TIPO: " & .ListItems(IL).SubItems(colTipo) & vbCr & _
+                                  "DESCRIÇÃO: " & .ListItems(IL).SubItems(colDescricao)
+                  
+                  .ListItems(IL).SubItems(colStatus) = ""
+                  VERIFICAR_DADOS_BASE = False
+               End If
             End If
-   
          End Select
       Next IL
    End With

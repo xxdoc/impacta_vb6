@@ -7,7 +7,7 @@ Begin VB.Form frmCustoProduto
    ClientHeight    =   10635
    ClientLeft      =   45
    ClientTop       =   390
-   ClientWidth     =   10185
+   ClientWidth     =   11670
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9.75
@@ -25,7 +25,7 @@ Begin VB.Form frmCustoProduto
    MDIChild        =   -1  'True
    MinButton       =   0   'False
    ScaleHeight     =   10635
-   ScaleWidth      =   10185
+   ScaleWidth      =   11670
    Begin VB.Frame fraResultado 
       BackColor       =   &H00FFFFFF&
       Caption         =   "Resultado"
@@ -40,10 +40,10 @@ Begin VB.Form frmCustoProduto
       EndProperty
       ForeColor       =   &H00DC7404&
       Height          =   1530
-      Left            =   75
+      Left            =   30
       TabIndex        =   48
       Top             =   4920
-      Width           =   10050
+      Width           =   11655
       Begin VB.TextBox txtMaximoCustoPorAquisicao 
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
@@ -127,7 +127,7 @@ Begin VB.Form frmCustoProduto
       EndProperty
       ForeColor       =   &H00DC7404&
       Height          =   3795
-      Left            =   9060
+      Left            =   10545
       TabIndex        =   40
       Top             =   0
       Width           =   1065
@@ -230,10 +230,10 @@ Begin VB.Form frmCustoProduto
       EndProperty
       ForeColor       =   &H00DC7404&
       Height          =   750
-      Left            =   4470
+      Left            =   5070
       TabIndex        =   38
       Top             =   4185
-      Width           =   5655
+      Width           =   6600
       Begin VB.TextBox txtTotalCustoOperacional 
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
@@ -272,31 +272,31 @@ Begin VB.Form frmCustoProduto
       EndProperty
       ForeColor       =   &H00DC7404&
       Height          =   750
-      Left            =   75
+      Left            =   30
       TabIndex        =   35
       Top             =   4185
-      Width           =   4305
+      Width           =   4950
       Begin VB.TextBox txtPorcentagemMarketingAPagar 
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2835
+         Left            =   3225
          Locked          =   -1  'True
          MaxLength       =   12
          TabIndex        =   25
          Text            =   "0,00"
          Top             =   285
-         Width           =   1365
+         Width           =   1560
       End
       Begin VB.TextBox txtPorcentagemMarketing 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   1455
+         Left            =   1680
          MaxLength       =   6
          TabIndex        =   9
          Text            =   "0,00"
          Top             =   285
-         Width           =   1215
+         Width           =   1410
       End
       Begin VB.Label Label 
          AutoSize        =   -1  'True
@@ -324,15 +324,15 @@ Begin VB.Form frmCustoProduto
       EndProperty
       ForeColor       =   &H00DC7404&
       Height          =   3120
-      Left            =   4470
+      Left            =   5070
       TabIndex        =   34
       Top             =   1050
-      Width           =   4515
+      Width           =   5445
       Begin VB.TextBox txtCustosFixos 
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2940
+         Left            =   3855
          Locked          =   -1  'True
          MaxLength       =   60
          TabIndex        =   24
@@ -343,48 +343,48 @@ Begin VB.Form frmCustoProduto
       Begin VB.TextBox txtOutrosCustos 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   1845
+         Left            =   2640
          MaxLength       =   12
          TabIndex        =   7
          Text            =   "0,00"
          Top             =   1731
-         Width           =   990
+         Width           =   1080
       End
       Begin VB.TextBox txtParcelamento 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   1845
+         Left            =   2640
          MaxLength       =   12
          TabIndex        =   6
          Text            =   "0,00"
          Top             =   1254
-         Width           =   990
+         Width           =   1080
       End
       Begin VB.TextBox txtIOF 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   1845
+         Left            =   2640
          MaxLength       =   12
          TabIndex        =   5
          Text            =   "0,00"
          Top             =   777
-         Width           =   990
+         Width           =   1080
       End
       Begin VB.TextBox txtImposto 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   1845
+         Left            =   2640
          MaxLength       =   12
          TabIndex        =   8
          Text            =   "0,00"
          Top             =   2208
-         Width           =   990
+         Width           =   1080
       End
       Begin VB.TextBox txtImpostoAPagar 
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2940
+         Left            =   3855
          Locked          =   -1  'True
          MaxLength       =   60
          TabIndex        =   23
@@ -396,7 +396,7 @@ Begin VB.Form frmCustoProduto
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2955
+         Left            =   3855
          Locked          =   -1  'True
          MaxLength       =   60
          TabIndex        =   20
@@ -408,7 +408,7 @@ Begin VB.Form frmCustoProduto
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2955
+         Left            =   3855
          Locked          =   -1  'True
          MaxLength       =   60
          TabIndex        =   21
@@ -420,7 +420,7 @@ Begin VB.Form frmCustoProduto
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2955
+         Left            =   3855
          Locked          =   -1  'True
          MaxLength       =   60
          TabIndex        =   22
@@ -432,7 +432,7 @@ Begin VB.Form frmCustoProduto
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2955
+         Left            =   3855
          Locked          =   -1  'True
          MaxLength       =   20
          TabIndex        =   19
@@ -443,12 +443,12 @@ Begin VB.Form frmCustoProduto
       Begin VB.TextBox txtGateway 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   1845
+         Left            =   2640
          MaxLength       =   12
          TabIndex        =   4
          Text            =   "0,00"
          Top             =   300
-         Width           =   990
+         Width           =   1080
       End
       Begin VB.Label Label 
          AutoSize        =   -1  'True
@@ -540,27 +540,36 @@ Begin VB.Form frmCustoProduto
       EndProperty
       ForeColor       =   &H00DC7404&
       Height          =   1050
-      Left            =   75
+      Left            =   30
       TabIndex        =   31
       Top             =   0
-      Width           =   8910
+      Width           =   10485
       Begin VB.ComboBox cmbProduto 
-         Height          =   360
+         BeginProperty Font 
+            Name            =   "Verdana"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
          Left            =   165
          TabIndex        =   0
          Text            =   "cmdProduto"
          Top             =   525
-         Width           =   6540
+         Width           =   8430
       End
       Begin VB.TextBox txtPrecoPraticado 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   6870
+         Left            =   8670
          MaxLength       =   12
          TabIndex        =   1
          Text            =   "0,00"
          Top             =   525
-         Width           =   1860
+         Width           =   1665
       End
       Begin VB.Label Label 
          AutoSize        =   -1  'True
@@ -579,7 +588,7 @@ Begin VB.Form frmCustoProduto
          Caption         =   "Preço Praticado"
          Height          =   240
          Index           =   6
-         Left            =   6870
+         Left            =   8670
          TabIndex        =   32
          Top             =   255
          Width           =   1560
@@ -599,65 +608,65 @@ Begin VB.Form frmCustoProduto
       EndProperty
       ForeColor       =   &H00DC7404&
       Height          =   3120
-      Left            =   75
+      Left            =   30
       TabIndex        =   27
       Top             =   1050
-      Width           =   4305
+      Width           =   4950
       Begin VB.TextBox txtMarkup 
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2760
+         Left            =   3030
          Locked          =   -1  'True
          MaxLength       =   10
          TabIndex        =   18
          Text            =   "0,00"
          Top             =   2625
-         Width           =   1440
+         Width           =   1710
       End
       Begin VB.TextBox txtPrecoFornecedor 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   2760
+         Left            =   3030
          MaxLength       =   10
          TabIndex        =   2
          Text            =   "0,00"
          Top             =   285
-         Width           =   1440
+         Width           =   1710
       End
       Begin VB.TextBox txtFreteFornecedor 
          Alignment       =   1  'Right Justify
          Height          =   360
-         Left            =   2760
+         Left            =   3030
          MaxLength       =   10
          TabIndex        =   3
          Text            =   "0,00"
          Top             =   870
-         Width           =   1440
+         Width           =   1710
       End
       Begin VB.TextBox txtTotalCustoFornecedor 
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2760
+         Left            =   3030
          Locked          =   -1  'True
          MaxLength       =   10
          TabIndex        =   16
          Text            =   "0,00"
          Top             =   1455
-         Width           =   1440
+         Width           =   1710
       End
       Begin VB.TextBox txtPrecoRecomendado 
          Alignment       =   1  'Right Justify
          BackColor       =   &H00C0FFC0&
          Height          =   360
-         Left            =   2760
+         Left            =   3030
          Locked          =   -1  'True
          MaxLength       =   10
          TabIndex        =   17
          Text            =   "0,00"
          Top             =   2040
-         Width           =   1440
+         Width           =   1710
       End
       Begin VB.Label Label 
          AutoSize        =   -1  'True
@@ -720,8 +729,8 @@ Begin VB.Form frmCustoProduto
       Left            =   15
       TabIndex        =   14
       Top             =   6480
-      Width           =   10155
-      _ExtentX        =   17912
+      Width           =   11640
+      _ExtentX        =   20532
       _ExtentY        =   3784
       LabelEdit       =   1
       LabelWrap       =   -1  'True
@@ -749,8 +758,8 @@ Begin VB.Form frmCustoProduto
       Left            =   0
       TabIndex        =   15
       Top             =   8685
-      Width           =   10170
-      _ExtentX        =   17939
+      Width           =   11655
+      _ExtentX        =   20558
       _ExtentY        =   3387
       LabelEdit       =   1
       LabelWrap       =   -1  'True
@@ -764,7 +773,7 @@ Begin VB.Form frmCustoProduto
       Appearance      =   0
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Verdana"
-         Size            =   9.75
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -790,9 +799,17 @@ Option Explicit
    Private Const colPrecoPraticado  As Integer = 3
    Private Const colPrecoFornecedor As Integer = 4
    Private Const colFreteFornecedor As Integer = 5
-   Private Const colTotalCusto      As Integer = 6
-   Private Const colPrecoRecomend   As Integer = 7
-   Private Const colStatus          As Integer = 8
+   
+   Private Const colGateway         As Integer = 6
+   Private Const colIOF             As Integer = 7
+   Private Const colParcelamento    As Integer = 8
+   Private Const colOutros_Custos   As Integer = 9
+   Private Const colImposto         As Integer = 10
+   Private Const colMarketing       As Integer = 11
+   
+   Private Const colTotalCusto      As Integer = 12
+   Private Const colPrecoRecomend   As Integer = 13
+   Private Const colStatus          As Integer = 14
 
 Private Sub MontaLvwUnidades()
    lvwLucro.ListItems.Clear
@@ -808,21 +825,71 @@ Private Sub MontaLvw()
    lvwConsulta.ColumnHeaders.Clear
    lvwConsulta.ColumnHeaders.Add , , "", 0
    lvwConsulta.ColumnHeaders.Add , , "Projeto", 0
-   lvwConsulta.ColumnHeaders.Add , , "Produto", 3000
-   lvwConsulta.ColumnHeaders.Add , , "Preço Praticado", 2000
-   lvwConsulta.ColumnHeaders.Add , , "Preço Fornecedor", 2000
-   lvwConsulta.ColumnHeaders.Add , , "Frete Fornecedor", 2000
-   lvwConsulta.ColumnHeaders.Add , , "Total Custo", 2000
-   lvwConsulta.ColumnHeaders.Add , , "Preço Recomendado", 2000
-   lvwConsulta.ColumnHeaders.Add , , "Status", 800
+   lvwConsulta.ColumnHeaders.Add , , "Produto", 2800
+   lvwConsulta.ColumnHeaders.Add , , "Preço Praticado", 1600, lvwColumnRight
+   lvwConsulta.ColumnHeaders.Add , , "Preço Fornecedor", 1700, lvwColumnRight
+   lvwConsulta.ColumnHeaders.Add , , "Frete Fornecedor", 1700, lvwColumnRight
+   
+   lvwConsulta.ColumnHeaders.Add , , "Gateway", 0
+   lvwConsulta.ColumnHeaders.Add , , "IOF", 0
+   lvwConsulta.ColumnHeaders.Add , , "Parcelamento", 0
+   lvwConsulta.ColumnHeaders.Add , , "Outros Custos", 0
+   lvwConsulta.ColumnHeaders.Add , , "Imposto", 0
+   lvwConsulta.ColumnHeaders.Add , , "Marketing", 0
+   
+   lvwConsulta.ColumnHeaders.Add , , "Total Custo", 1200, lvwColumnRight
+   lvwConsulta.ColumnHeaders.Add , , "Preço Recomendado", 2000, lvwColumnRight
+   lvwConsulta.ColumnHeaders.Add , , "", 350
    lvwConsulta.View = lvwReport
+End Sub
+
+Private Sub cmbProduto_KeyPress(KeyAscii As Integer)
+
+   Dim CB As Long
+   Dim FindString As String
+   Const CB_ERR = (-1)
+   Const CB_FINDSTRING = &H14C
+  
+   With cmbProduto
+      If KeyAscii = 68 Or KeyAscii = 100 Then cmbProduto.SetFocus
+      
+      If KeyAscii = 13 Then
+         If KeyAscii = vbKeyReturn Then
+            Sendkeys "{tab}"
+         End If
+      End If
+         
+      If KeyAscii < 32 Or KeyAscii > 127 Then Exit Sub
+      
+      If .SelLength = 0 Then
+         FindString = .Text & Chr$(KeyAscii)
+      Else
+         FindString = Left$(.Text, .SelStart) & Chr$(KeyAscii)
+      End If
+      
+      CB = SendMessage(.hwnd, CB_FINDSTRING, -1, ByVal FindString)
+      If CB <> CB_ERR Then
+         .ListIndex = CB
+         .SelStart = Len(FindString)
+         .SelLength = Len(.Text) - .SelStart
+      End If
+   End With
+   KeyAscii = 0
+   
+End Sub
+
+Private Sub cmbProduto_Validate(Cancel As Boolean)
+   If Len(cmbProduto) > 75 Then cmbProduto = Mid(cmbProduto, 1, 75)
 End Sub
 
 Private Sub cmdCancelar_Click()
 
    MontaLvw
    MontaLvwUnidades
+   
+   CARREGA_COMBOS
 
+   cmbProduto.Enabled = True
    If cmbProduto.ListCount > 0 Then cmbProduto.ListIndex = 0
    txtPrecoPraticado = "0,00"
    
@@ -849,7 +916,12 @@ Private Sub cmdCancelar_Click()
    
    txtTotalCustoOperacional = "0,00"
    
+   txtLucroFinal = "0,00"
+   txtLucroFinalPorcentagem = "0,00"
+   txtMaximoCustoPorAquisicao = "0,00"
+      
    CONSULTAR_REGISTROS
+   PREENCHER_CUSTOS_FIXOS
    
 End Sub
 
@@ -871,7 +943,7 @@ Private Sub cmdExcluir_Click()
       For IL = 1 To .ListItems.Count
          Select Case .ListItems(IL).SubItems(colStatus)
          Case "D"
-            CmdSql = "DELETE FROM ATENDIMENTO" & vbCr
+            CmdSql = "DELETE FROM CUSTO_PRODUTO" & vbCr
             CmdSql = CmdSql & "WHERE PROJETO = " & PoeAspas(UCase(App.EXEName)) & vbCr
             CmdSql = CmdSql & "  AND PRODUTO = " & PoeAspas(.ListItems(IL).SubItems(colProduto))
             CMySql.Executa CmdSql, True
@@ -943,17 +1015,17 @@ Private Sub cmdSalvar_Click()
       MsgBoxTabum Me, "REGISTRO INCLUÍDO COM SUCESSO"
    Else
       
-      CmdSql = "UPDATE SET PRECO_PRATICADO  = " & Str(txtPrecoPraticado) & "," & vbCr
-      CmdSql = CmdSql & "           PRECO_FORNECEDOR = " & Str(txtPrecoFornecedor) & "," & vbCr
-      CmdSql = CmdSql & "           FRETE_FORNECEDOR = " & Str(txtFreteFornecedor) & "," & vbCr
-      CmdSql = CmdSql & "           GATEWAY          = " & Str(txtGateway) & "," & vbCr
-      CmdSql = CmdSql & "           IOF              = " & Str(txtIOF) & "," & vbCr
-      CmdSql = CmdSql & "           PARCELAMENTO     = " & Str(txtParcelamento) & "," & vbCr
-      CmdSql = CmdSql & "           OUTROS_CUSTOS    = " & Str(txtOutrosCustos) & "," & vbCr
-      CmdSql = CmdSql & "           IMPOSTO          = " & Str(txtImposto) & "," & vbCr
-      CmdSql = CmdSql & "           MARKETING        = " & Str(txtPorcentagemMarketing) & vbCr
+      CmdSql = "UPDATE CUSTO_PRODUTO SET PRECO_PRATICADO  = " & Str(txtPrecoPraticado) & "," & vbCr
+      CmdSql = CmdSql & "                         PRECO_FORNECEDOR = " & Str(txtPrecoFornecedor) & "," & vbCr
+      CmdSql = CmdSql & "                         FRETE_FORNECEDOR = " & Str(txtFreteFornecedor) & "," & vbCr
+      CmdSql = CmdSql & "                         GATEWAY          = " & Str(txtGateway) & "," & vbCr
+      CmdSql = CmdSql & "                         IOF              = " & Str(txtIOF) & "," & vbCr
+      CmdSql = CmdSql & "                         PARCELAMENTO     = " & Str(txtParcelamento) & "," & vbCr
+      CmdSql = CmdSql & "                         OUTROS_CUSTOS    = " & Str(txtOutrosCustos) & "," & vbCr
+      CmdSql = CmdSql & "                         IMPOSTO          = " & Str(txtImposto) & "," & vbCr
+      CmdSql = CmdSql & "                         MARKETING        = " & Str(txtPorcentagemMarketing) & vbCr
       CmdSql = CmdSql & "WHERE PROJETO = " & PoeAspas(UCase(App.EXEName)) & vbCr
-      CmdSql = CmdSql & "  AND PRODUTO = " & PoeAspas(UCase(cmbProduto)) & ","
+      CmdSql = CmdSql & "  AND PRODUTO = " & PoeAspas(UCase(cmbProduto))
       CMySql.Executa CmdSql, True
       
       MsgBoxTabum Me, "REGISTRO ALTERADO COM SUCESSO"
@@ -968,28 +1040,20 @@ End Sub
 
 Private Sub Form_KeyPress(KeyAscii As Integer)
    KeyAscii = Asc(UCase(Chr(KeyAscii)))
+   
    If KeyAscii = vbKeyReturn Then
          Sendkeys "{tab}"
    End If
 End Sub
 
 Private Sub Form_Load()
-   CONSULTAR_REGISTROS
-      
-   CmdSql = "SELECT PRODUTO" & vbCr
-   CmdSql = CmdSql & "FROM CUSTO_PRODUTO" & vbCr
-   CmdSql = CmdSql & "WHERE PROJETO = " & PoeAspas(UCase(App.EXEName))
-   CMySql.Consulta CmdSql, RsConsulta
-   
-   cmbProduto.Clear
-   cmbProduto.AddItem ""
-   
-   Do While Not RsConsulta.EOF
-      cmbProduto.AddItem Trim(RsConsulta("PRODUTO"))
-   RsConsulta.MoveNext
-   Loop
+   CARREGA_COMBOS
    
    If cmbProduto.ListCount > 0 Then cmbProduto.ListIndex = 0
+   
+   PREENCHER_CUSTOS_FIXOS
+   
+   CONSULTAR_REGISTROS
 End Sub
 
 Private Sub lvwConsulta_DblClick()
@@ -1023,13 +1087,23 @@ Private Sub lvwConsulta_DblClick()
    cmbProduto = UCase(lvwConsulta.SelectedItem.SubItems(colProduto))
    cmbProduto.Enabled = False
          
-   txtPrecoPraticado = lvwConsulta.SelectedItem.SubItems(colPrecoPraticado)
-   txtPrecoFornecedor = lvwConsulta.SelectedItem.SubItems(colPrecoFornecedor)
-   txtFreteFornecedor = lvwConsulta.SelectedItem.SubItems(colFreteFornecedor)
-   txtTotalCustoFornecedor = lvwConsulta.SelectedItem.SubItems(colTotalCusto)
-   txtPrecoRecomendado = lvwConsulta.SelectedItem.SubItems(colPrecoRecomend)
-      
+   txtPrecoPraticado = Format(lvwConsulta.SelectedItem.SubItems(colPrecoPraticado), "###,##0.00")
+   txtPrecoFornecedor = Format(lvwConsulta.SelectedItem.SubItems(colPrecoFornecedor), "###,##0.00")
+   txtFreteFornecedor = Format(lvwConsulta.SelectedItem.SubItems(colFreteFornecedor), "###,##0.00")
+   txtTotalCustoFornecedor = Format(lvwConsulta.SelectedItem.SubItems(colTotalCusto), "###,##0.00")
+   txtPrecoRecomendado = Format(lvwConsulta.SelectedItem.SubItems(colPrecoRecomend), "###,##0.00")
+   
+   txtGateway = Format(lvwConsulta.SelectedItem.SubItems(colGateway), "###,##0.00")
+   txtIOF = Format(lvwConsulta.SelectedItem.SubItems(colIOF), "###,##0.00")
+   txtParcelamento = Format(lvwConsulta.SelectedItem.SubItems(colParcelamento), "###,##0.00")
+   txtOutrosCustos = Format(lvwConsulta.SelectedItem.SubItems(colOutros_Custos), "###,##0.00")
+   txtImposto = Format(lvwConsulta.SelectedItem.SubItems(colImposto), "###,##0.00")
+   
+   txtPorcentagemMarketing = Format(lvwConsulta.SelectedItem.SubItems(colMarketing), "###,##0.00")
+         
    txtPrecoPraticado.SetFocus
+   
+   CALCULA_CUSTOS
 
 End Sub
 
@@ -1230,11 +1304,19 @@ Private Sub CONSULTAR_REGISTROS()
       Set Item = lvwConsulta.ListItems.Add(, , "")
       Item.SubItems(colProjeto) = Trim(RsConsulta("PROJETO"))
       Item.SubItems(colProduto) = Trim(RsConsulta("PRODUTO"))
-      Item.SubItems(colPrecoPraticado) = Trim(RsConsulta("PRECO_PRATICADO"))
-      Item.SubItems(colPrecoFornecedor) = Trim(RsConsulta("PRECO_FORNECEDOR"))
-      Item.SubItems(colFreteFornecedor) = Trim(RsConsulta("FRETE_FORNECEDOR"))
-      Item.SubItems(colTotalCusto) = "CÁLCULO"
-      Item.SubItems(colPrecoRecomend) = "CÁLCULO"
+      Item.SubItems(colPrecoPraticado) = Format(RsConsulta("PRECO_PRATICADO"), "###,##0.00")
+      Item.SubItems(colPrecoFornecedor) = Format(RsConsulta("PRECO_FORNECEDOR"), "###,##0.00")
+      Item.SubItems(colFreteFornecedor) = Format(RsConsulta("FRETE_FORNECEDOR"), "###,##0.00")
+      Item.SubItems(colGateway) = Format(RsConsulta("GATEWAY"), "###,##0.00")
+      Item.SubItems(colIOF) = Format(RsConsulta("IOF"), "###,##0.00")
+      Item.SubItems(colParcelamento) = Format(RsConsulta("PARCELAMENTO"), "###,##0.00")
+      Item.SubItems(colOutros_Custos) = Format(RsConsulta("OUTROS_CUSTOS"), "###,##0.00")
+      Item.SubItems(colImposto) = Format(RsConsulta("IMPOSTO"), "###,##0.00")
+      Item.SubItems(colMarketing) = Format(RsConsulta("MARKETING"), "###,##0.00")
+      Item.SubItems(colTotalCusto) = Format((RsConsulta("PRECO_FORNECEDOR")) + Trim(RsConsulta("FRETE_FORNECEDOR")), "###,##0.00")
+      Item.SubItems(colPrecoRecomend) = Format((RsConsulta("MARKETING") + RsConsulta("FRETE_FORNECEDOR")) * 3, "###,##0.00")
+      txtTotalCustoFornecedor = Format(Cdblx(txtPrecoFornecedor) + Cdblx(txtFreteFornecedor), "###,##0.00")
+      txtPrecoRecomendado = Format(Cdblx(txtTotalCustoFornecedor) * 3, "###,##0.00")
       Item.SubItems(colStatus) = ""
    RsConsulta.MoveNext
    Loop
@@ -1297,3 +1379,49 @@ Private Function CALCULA_CUSTOS()
    End If
    
 End Function
+
+Private Sub PREENCHER_CUSTOS_FIXOS()
+
+   If cmbProduto.Enabled = True Then
+      CmdSql = "SELECT *" & vbCr
+      CmdSql = CmdSql & "FROM TIPOCOMBO" & vbCr
+      CmdSql = CmdSql & "WHERE PROJETO = 'MTABUM'" & vbCr
+      CmdSql = CmdSql & "  AND FORMULARIO = 'CUSTO DO PRODUTO'"
+      CMySql.Consulta CmdSql, RsConsulta
+      
+      Do While Not RsConsulta.EOF
+         Select Case Trim(RsConsulta("TIPO"))
+         Case "GATEWAY"
+            txtGateway = Format(Cdblx(RsConsulta("DESCRICAO")), "###,##0.00")
+         Case "IOF"
+            txtIOF = Format(Cdblx(RsConsulta("DESCRICAO")), "###,##0.00")
+         Case "PARCELAMENTO"
+            txtParcelamento = Format(Cdblx(RsConsulta("DESCRICAO")), "###,##0.00")
+         Case "OUTROS CUSTOS"
+            txtOutrosCustos = Format(Cdblx(RsConsulta("DESCRICAO")), "###,##0.00")
+         Case "IMPOSTO"
+            txtImposto = Format(Cdblx(RsConsulta("DESCRICAO")), "###,##0.00")
+         Case "MARKETING"
+            txtPorcentagemMarketing = Format(Cdblx(RsConsulta("DESCRICAO")), "###,##0.00")
+         End Select
+      RsConsulta.MoveNext
+      Loop
+   End If
+   
+End Sub
+
+Private Sub CARREGA_COMBOS()
+
+   CmdSql = "SELECT PRODUTO" & vbCr
+   CmdSql = CmdSql & "FROM CUSTO_PRODUTO" & vbCr
+   CmdSql = CmdSql & "WHERE PROJETO = " & PoeAspas(UCase(App.EXEName))
+   CMySql.Consulta CmdSql, RsConsulta
+   
+   cmbProduto.Clear
+   cmbProduto.AddItem ""
+   
+   Do While Not RsConsulta.EOF
+      cmbProduto.AddItem Trim(RsConsulta("PRODUTO"))
+   RsConsulta.MoveNext
+   Loop
+End Sub
